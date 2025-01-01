@@ -62,7 +62,7 @@ library
     import:           warnings
 
     -- Modules exported by the library.
-    exposed-modules:  MyLib
+    exposed-modules:  Greeting
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -128,4 +128,7 @@ test-suite hello-haskell-test
     -- Test dependencies.
     build-depends:
         base ^>=4.17.2.1,
+        hspec ^>=2.10,
         hello-haskell
+    other-modules:
+        GreetingSpec
